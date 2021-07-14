@@ -2,10 +2,14 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
  /* body styles */
  body{
+        margin: 0;
+        padding: 0;
+    }
+ body{
     font-family: 'Poppins', sans-serif;
  }
  .container{
-     max-width: 1060px;
+     max-width: 1440px;
      margin: auto;
  }
   /* starting header styles */
@@ -48,8 +52,197 @@
     transition: transform 0.5s;
  }
  .img-banner img{
-    width: 556.1px;
+    width: 556px;
     height: 438px;
  }
  /* header styles end */
- 
+
+ /* --------------
+ player profile styles
+ ---------------------*/
+ .player-about{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 15px;
+    margin-top: 70px;
+    margin-bottom: 165px;
+
+}
+.player{
+    width: 330px;
+    height: 474px;  
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+}
+.player-img img{
+    max-width: 100%;
+}
+.player-profile h3{
+    margin: 15px 0;
+}
+ /* player profile ends */
+
+/* Highlight Section */
+.highlight-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.highlight-container{
+    margin-right: 69px;
+    width: 466px;
+    height: 309px;
+}
+.highlight-container h2{
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 60px;
+}
+.highlight-container p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 24px;
+}
+
+.highlight-banner img{
+    width: 560px;
+    height: 425px;
+}
+
+/* Live Football Watch Css */
+.video-highlights{
+    max-width: 100%;
+    margin-top: 120px;
+    margin-bottom: 100px;
+   
+}
+.video-highlights-heading h1{
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Subscribe Section */
+.subscribe-heading h2{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.my-subscribers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+
+.my-subscribers input{
+    width: 400px;
+    height: 37px;
+    padding-left: 15px;
+    margin-right: 20px;
+    border-radius: 10px;
+    outline: 0;
+    border: 2px solid #ddd;
+   
+}
+.my-subscribers ::placeholder{
+    font-weight: 600;
+    color: #ddd;
+}
+
+.my-subscribers input:focus{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Section Starts */
+
+.footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20pxpx;
+    height: 213px;
+}
+.footer-img img{
+    width: 483.87px;
+    height: 110px;
+}
+.footer-icon i{
+    padding: 15px 10px;
+    font-size: 16px;
+    color: #777;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.footer-icon i:hover{
+    color: #E02C6D;
+}
+.footer-cp{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+  /* Footer Section Ends */
+
+
+/* Responsive Media Query Mobile Devices */
+
+@media only screen and (max-device-width : 688px) {
+
+    .container{
+        max-width: 100%;
+    }
+
+    .header-top{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .header-container{
+        margin-bottom: 30px;
+    }
+    .header-container h2{
+        font-size: 58px;
+        height: auto;
+    }
+    .player-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .highlight-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .highlight-container{
+        margin-bottom: 30px;
+    }
+    .video-highlights iframe{
+        max-width: 100%;
+        
+    }
+    .my-subscribers{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 120px;
+    }
+    .subscribe-heading h2{
+        font-size: 35px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .my-subscribers input{
+        margin-bottom: 15px;
+    }
+}
