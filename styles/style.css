@@ -9,7 +9,7 @@
     font-family: 'Poppins', sans-serif;
  }
  .container{
-     max-width: 1440px;
+     max-width: 1080px;
      margin: auto;
  }
   /* starting header styles */
@@ -107,8 +107,8 @@
 }
 
 .highlight-banner img{
-    width: 560px;
-    height: 425px;
+    width: 567px;
+    height: 427px;
 }
 
 /* Live Football Watch Css */
